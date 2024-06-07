@@ -10,8 +10,6 @@ import Layout from "./layout"
 import LoginPage from "./registration";
 
 
-// actions
-
 import ErrorHandling from "./error";
 
 

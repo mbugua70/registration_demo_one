@@ -9,5 +9,6 @@ const router = Router();
 
 // Get All Workouts
 router.get("/search", dealersControllers.dealers_search_all);
+router.patch("/search/:id", dealersControllers.dealer_update);
 
 module.exports = router;

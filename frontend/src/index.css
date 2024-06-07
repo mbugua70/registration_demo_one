@@ -41,7 +41,7 @@ body {
   width: 100vw;
   height: 100vh;
   height: 100dvh;
-  background-image: url("../public/image/imgeone.jpg");
+  background-image: url("/image/imgeone.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: left top;
@@ -153,8 +153,9 @@ progress{
   margin-block: 0px;
 }
 .results{
-  width: 80%;
+  width: 72.5%;
   margin-block: 0px;
+  margin-inline: auto;
   padding-block: 0px;
 }
 .dealer_container{
@@ -185,11 +186,17 @@ progress{
   border-bottom: none;
 }
 
-.userdetails{
+.userdetailsconfirmed{
   border-radius: 8px;
   width: 73%;
-  margin: 0px auto;
+  margin: 1rem auto;
+  background-color: #A5D6A7;
+}
 
+.userdetailsnotconfirmed{
+  border-radius: 8px;
+  width: 73%;
+  margin: 1rem auto;
   background-color: #fff;
 }
 
@@ -241,6 +248,7 @@ button.reject{
  border-style: none;
  border-radius: 6px;
 }
+
 
 @keyframes slide-down-fade-in {
   from {

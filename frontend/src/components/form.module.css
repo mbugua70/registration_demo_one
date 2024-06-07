@@ -1,6 +1,7 @@
 .login_container{
     width: 90%;
     margin: 0 auto;
+    padding: 0px 0px;
 }
 
 .form{
@@ -11,6 +12,8 @@
     justify-content: center !important;
     margin-inline:  auto !important;
     align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .button-style{

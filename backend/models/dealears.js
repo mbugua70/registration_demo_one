@@ -21,6 +21,9 @@ const dealersSchema = new Schema(
     terms: {
       type: String,
     },
+    confirmed: {
+      type: Boolean,
+    },
   },
   { timestamps: true }
 );
