@@ -16,8 +16,13 @@ module.exports.dealers_search_all = async (req, res) => {
       ],
     });
 
+    // if(!query) {
+
+    // }
+
     return res.status(200).json({ success: true, resultDealers });
   } catch (err) {
+    console.log(err.message);
     res.status(400).json({ error: err.message });
   }
 };

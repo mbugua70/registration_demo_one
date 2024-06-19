@@ -17,8 +17,6 @@ export const loginLoader = ({ request }) => {
 };
 
 const LoginPage = () => {
-  // code for logging status with useNavigation hook
-
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -26,12 +24,14 @@ const LoginPage = () => {
   const [isModal, setIsModal] = useState(false);
   const [isSearchBar, setIsSearchBar] = useState(true);
   const [isKeySet, setIsKeySet] = useState(false);
+
   useEffect(() => {
     const search = async () => {
       if (query.trim() !== "") {
         setLoading(true);
         try {
           const data = await dealerSearch(query);
+
           setResults(data);
         } catch (err) {
           if (err) {
@@ -212,7 +212,7 @@ const LoginPage = () => {
           }
         >
           {selectedItem && (
-            <div className="userdetails_two" key={isKeySet}>
+            <div className="userdetails_two">
               <p>Name: {selectedItem.name}</p>
               <p>Email: {selectedItem.email}</p>
               <p>Company: {selectedItem.company}</p>
